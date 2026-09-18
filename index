@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LaEntrenación</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="LaEntrenación">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#131418">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAIxklEQVR4nO3dwVFqSxRAUf1FBjIwAWIiRmMyBYN4Aye/ynrIgwu3u/dac/FU9bm9QQe8vh3fXwDo+W/vAQDYhwAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABEHfYeYHFf59P9L3L8+Lz/ReD57P/gXt+O73vPsKBN9v4nTwJTsP+zEICNPWj1/89jwLDs/1z8D2BLT9j+p/0W+Ff2fzoCsJln7qVngNHY/xkJwDaev5GeAcZh/yclABvYaxc9A4zA/s9LAO617xZ6BtiX/Z+aAABECcBdRngDMsIMNI2weyPMMC8BAIgSAIAoAbjdOJ89x5mEjnG2bpxJpiMAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAEHXYe4BnuOEb444fn4+YBNiLe+CnxQNw85eFfv/g8scPBe6Bv1n5T0D3f1W0L5uG2bkHLlg2AFud2cJnD8tzD1y2ZgC2Pa1Vzx7W5h741YIBeMQ5LXn2sDD3wDUWDAAA11gtAI9L9Hrxh1W5B660WgAAuJIAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQNRh7wHYxtf5tPcIwGR8AgCIEgCAKAEAiBIAgCgBAIgSAIAoAQCIEgCAKAEAiBIAgCgBAIgSAIAoAQCIEgCAKAEAiBIAgCgBAIgSAIAoAQCIEgCAKAEAiBIAgCgBAIgSAIAoAQCIEgCAKAEAiBIAgCgBAIgSAIAoAQCIEgCAKAEAiBIAgKjD3gOwjePH594j0PJ1Pu09AvfyCQAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgarUAHD8+p3tlYFvugSutFgAArrRgAB6R6MWyD8tzD1xjwQC8bH1O6506FLgHfrVmAF62O60lTx0i3AOXLRuAly3ObNVThw73wAWHvQd4rO+T+zqfbvtBYAHugb9ZPADflj9F4FfugZ9W/hMQABcIAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQA3G6cb5gbZxI6xtm6cSaZjgAARAkAQJQA3GWEz54jzEDTCLs3wgzzEgCAKAG4175vQLz9YV/2f2oCsIG9ttD2MwL7Py8B2Mbzd9H2Mw77PykB2MwzN9L2Mxr7PyMB2NJz9tL2Myb7P53Xt+P73jMs6Ot8esTLWn2mYP9nIQCPtcmTYO+ZlP0fnAAARPkfAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQJQAAEQJAECUAABECQBAlAAARAkAQNQfzLrTGy/kxPEAAAAASUVORK5CYII=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F0EFEB;
+    --bg-elev:#FFFFFF;
+    --bg-elev-2:#E7E4DC;
+    --text:#17181C;
+    --text-dim:#6B6C72;
+    --border:#DAD7CE;
+    --accent:#D8451F;
+    --accent-text:#FFFFFF;
+    --accent-2:#1F8F58;
+    --danger:#C93B2E;
+    --tabbar-bg:rgba(255,255,255,0.92);
+    --shadow:0 8px 24px rgba(23,24,28,0.08);
+    --chip-bg:#E7E4DC;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#131418;
+      --bg-elev:#1E2025;
+      --bg-elev-2:#282A30;
+      --text:#F2F1ED;
+      --text-dim:#9B9CA3;
+      --border:#33353C;
+      --accent:#FF6B3D;
+      --accent-text:#131418;
+      --accent-2:#3ECF8E;
+      --danger:#FF6B5E;
+      --tabbar-bg:rgba(19,20,24,0.92);
+      --shadow:0 8px 24px rgba(0,0,0,0.35);
+      --chip-bg:#282A30;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#131418;
+    --bg-elev:#1E2025;
+    --bg-elev-2:#282A30;
+    --text:#F2F1ED;
+    --text-dim:#9B9CA3;
+    --border:#33353C;
+    --accent:#FF6B3D;
+    --accent-text:#131418;
+    --accent-2:#3ECF8E;
+    --danger:#FF6B5E;
+    --tabbar-bg:rgba(19,20,24,0.92);
+    --shadow:0 8px 24px rgba(0,0,0,0.35);
+    --chip-bg:#282A30;
+  }
+
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter', system-ui, -apple-system, sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  h1,h2,h3, .num{
+    font-family:'Oswald', 'Inter', system-ui, sans-serif;
+    font-weight:600;
+    letter-spacing:0.2px;
+    margin:0;
+  }
+  button, input, select, textarea{ font-family:inherit; color:inherit; }
+  button{ cursor:pointer; }
+
+  #app{
+    max-width:460px;
+    margin:0 auto;
+    min-height:100vh;
+    background:var(--bg);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+  }
+  @media (min-width:461px){
+    body{ background: var(--bg-elev-2); }
+    #app{ box-shadow:var(--shadow); min-height:100vh; }
+  }
+
+  /* Topbar */
+  .topbar{
+    position:sticky; top:0; z-index:20;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 18px 14px;
+    background:var(--bg);
+    border-bottom:1px solid var(--border);
+  }
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand-mark{
+    width:34px; height:34px; border-radius:9px;
+    background:var(--accent); color:var(--accent-text);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .brand-mark svg{ width:19px; height:19px; }
+  .brand-word{ font-size:17px; line-height:1.1; }
+  .brand-sub{ font-size:11px; color:var(--text-dim); font-family:'Inter'; font-weight:500; margin-top:1px; }
+  .profile-pill{
+    width:36px; height:36px; border-radius:50%;
+    background:var(--bg-elev-2); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+    font-size:14px; font-weight:600; color:var(--text);
+  }
+
+  /* Views */
+  main{ flex:1; padding:16px 16px 96px; }
+  .view{ display:none; animation:fadeIn .18s ease; }
+  .view.active{ display:block; }
+  @keyframes fadeIn{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);} }
+
+  .stats-strip{
+    display:flex; gap:10px; margin-bottom:18px;
+  }
+  .stat-card{
+    flex:1; background:var(--bg-elev); border:1px solid var(--border);
+    border-radius:14px; padding:12px 14px;
+  }
+  .stat-num{ font-size:26px; line-height:1; }
+  .stat-label{ font-size:11.5px; color:var(--text-dim); margin-top:4px; font-weight:500; }
+
+  .section-title{ font-size:13px; text-transform:none; color:var(--text-dim); font-weight:600; margin:22px 0 10px; font-family:'Inter'; }
+  .section-title:first-child{ margin-top:0; }
+
+  .card{
+    background:var(--bg-elev); border:1px solid var(--border);
+    border-radius:16px; padding:16px;
+  }
+  .field{ margin-bottom:14px; }
+  .field label{ display:block; font-size:12.5px; font-weight:600; color:var(--text-dim); margin-bottom:6px; }
+  .field input[type="text"], .field input[type="number"], .field input[type="date"], .field select, .field textarea{
+    width:100%; padding:11px 12px; border-radius:10px;
+    border:1px solid var(--border); background:var(--bg);
+    color:var(--text); font-size:15px;
+  }
+  .field textarea{ resize:vertical; min-height:56px; }
+  .field input:focus, .field select:focus, .field textarea:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+
+  .empty-cta{
+    text-align:center; padding:28px 16px; border:1px dashed var(--border); border-radius:16px; color:var(--text-dim);
+  }
+  .empty-cta .num{ font-size:15px; color:var(--text); margin-bottom:6px; }
+  .empty-cta p{ font-size:13px; margin:0 0 14px; line-height:1.5; }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:6px;
+    border:none; border-radius:11px; padding:12px 16px;
+    font-size:14.5px; font-weight:600;
+  }
+  .btn-primary{ background:var(--accent); color:var(--accent-text); width:100%; }
+  .btn-primary:active{ opacity:0.85; }
+  .btn-ghost{ background:var(--bg-elev-2); color:var(--text); }
+  .btn-block{ width:100%; }
+  .btn-sm{ padding:8px 12px; font-size:13px; border-radius:9px; }
+  .btn-danger-text{ background:none; color:var(--danger); font-weight:600; font-size:13px; padding:8px; }
+  .btn-icon{ background:var(--bg-elev-2); border-radius:10px; width:36px; height:36px; display:flex; align-items:center; justify-content:center; }
+  .btn-icon svg{ width:16px; height:16px; }
+  .btn[disabled]{ opacity:0.45; pointer-events:none; }
+
+  .set-row{
+    display:grid; grid-template-columns:1fr 1fr 34px; gap:8px; align-items:center; margin-bottom:8px;
+  }
+  .set-row .idx{ font-size:12px; color:var(--text-dim); text-align:center; }
+  .add-set-btn{
+    width:100%; padding:10px; border-radius:10px; border:1px dashed var(--border);
+    background:none; color:var(--text-dim); font-size:13.5px; font-weight:600; margin-top:2px;
+  }
+  .remove-set{ background:none; border:none; color:var(--text-dim); width:34px; height:34px; display:flex; align-items:center; justify-content:center; border-radius:8px; }
+  .remove-set svg{ width:15px; height:15px; }
+
+  .chip-row{ display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; margin-bottom:14px; scrollbar-width:none; }
+  .chip-row::-webkit-scrollbar{ display:none; }
+  .chip{
+    flex-shrink:0; padding:8px 14px; border-radius:100px; background:var(--chip-bg);
+    font-size:13px; font-weight:600; color:var(--text-dim); border:1px solid transparent; white-space:nowrap;
+  }
+  .chip.active{ background:var(--accent); color:var(--accent-text); }
+
+  .day-group{ margin-bottom:20px; }
+  .day-label{ font-size:12.5px; font-weight:600; color:var(--text-dim); margin-bottom:8px; text-transform:capitalize; }
+  .session-card{
+    background:var(--bg-elev); border:1px solid var(--border); border-radius:14px; padding:13px 14px; margin-bottom:10px;
+  }
+  .session-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
+  .session-machine{ font-size:15px; font-weight:600; }
+  .session-sets{ font-size:13px; color:var(--text-dim); margin-top:4px; line-height:1.5; }
+  .session-note{ font-size:13px; color:var(--text); margin-top:8px; font-style:italic; }
+  .session-actions{ display:flex; gap:6px; flex-shrink:0; }
+  .session-photo{ width:100%; max-height:160px; object-fit:cover; border-radius:10px; margin-top:10px; }
+  .pr-tag{ display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; color:var(--accent-2); margin-top:6px; }
+  .pr-tag svg{ width:12px; height:12px; }
+
+  .machine-row{
+    display:flex; align-items:center; gap:12px; padding:11px 0; border-bottom:1px solid var(--border);
+  }
+  .machine-row:last-child{ border-bottom:none; }
+  .machine-thumb{
+    width:44px; height:44px; border-radius:11px; background:var(--bg-elev-2); flex-shrink:0;
+    display:flex; align-items:center; justify-content:center; font-weight:700; font-size:16px; overflow:hidden;
+  }
+  .machine-thumb img{ width:100%; height:100%; object-fit:cover; }
+  .machine-thumb svg{ width:22px; height:22px; color:var(--accent); }
+  .machine-info{ flex:1; min-width:0; }
+  .machine-name{ font-size:14.5px; font-weight:600; }
+  .machine-group{ font-size:12px; color:var(--text-dim); margin-top:1px; }
+
+  .photo-input-row{ display:flex; align-items:center; gap:12px; }
+  .photo-preview{ width:52px; height:52px; border-radius:12px; background:var(--bg-elev-2); object-fit:cover; flex-shrink:0; }
+  .file-btn{ position:relative; overflow:hidden; }
+  .file-btn input[type="file"]{ position:absolute; inset:0; opacity:0; cursor:pointer; }
+
+  .progress-header{ display:flex; gap:10px; margin-bottom:14px; }
+  .progress-header .field{ flex:1; margin-bottom:0; }
+  .metric-toggle{ display:flex; background:var(--bg-elev-2); border-radius:11px; padding:3px; margin-bottom:16px; }
+  .metric-toggle button{ flex:1; background:none; border:none; padding:9px; border-radius:8px; font-size:12.5px; font-weight:600; color:var(--text-dim); }
+  .metric-toggle button.active{ background:var(--bg-elev); color:var(--text); box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+  .chart-wrap{ background:var(--bg-elev); border:1px solid var(--border); border-radius:16px; padding:16px 12px 8px; }
+  .pr-row{ display:flex; gap:10px; margin-top:14px; }
+
+  /* Tabbar */
+  .tabbar{
+    position:fixed; bottom:0; left:50%; transform:translateX(-50%);
+    width:100%; max-width:460px;
+    display:flex; justify-content:space-around;
+    background:var(--tabbar-bg); backdrop-filter:blur(10px);
+    border-top:1px solid var(--border);
+    padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+    z-index:30;
+  }
+  .tab-btn{
+    background:none; border:none; display:flex; flex-direction:column; align-items:center; gap:3px;
+    color:var(--text-dim); font-size:10.5px; font-weight:600; padding:4px 10px; border-radius:10px; flex:1;
+  }
+  .tab-btn svg{ width:21px; height:21px; }
+  .tab-btn.active{ color:var(--accent); }
+
+  /* Modal / sheet */
+  .overlay{
+    position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:50;
+    display:none; align-items:flex-end; justify-content:center;
+  }
+  .overlay.show{ display:flex; }
+  .overlay.center{ align-items:center; padding:20px; }
+  .sheet{
+    background:var(--bg); width:100%; max-width:460px; border-radius:20px 20px 0 0;
+    padding:20px 18px calc(20px + env(safe-area-inset-bottom)); max-height:86vh; overflow-y:auto;
+  }
+  .overlay.center .sheet{ border-radius:18px; max-height:80vh; }
+  .sheet-handle{ width:36px; height:4px; background:var(--border); border-radius:4px; margin:0 auto 16px; }
+  .sheet h2{ font-size:18px; margin-bottom:16px; }
+  .sheet-row{ display:flex; align-items:center; justify-content:space-between; padding:13px 0; border-bottom:1px solid var(--border); }
+  .sheet-row:last-child{ border-bottom:none; }
+  .sheet-row-label{ font-size:14px; font-weight:500; }
+
+  .toast{
+    position:fixed; bottom:96px; left:50%; transform:translateX(-50%) translateY(20px);
+    background:var(--bg-elev); border:1px solid var(--border); color:var(--text);
+    padding:12px 18px; border-radius:100px; font-size:13.5px; font-weight:600;
+    box-shadow:var(--shadow); z-index:60; opacity:0; transition:all .25s ease; display:flex; align-items:center; gap:8px;
+    max-width:88%; text-align:center;
+  }
+  .toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
+  .toast svg{ width:15px; height:15px; flex-shrink:0; color:var(--accent-2); }
+
+  ::placeholder{ color:var(--text-dim); opacity:0.7; }
+</style>
+</head>
+<body>
+
+<div id="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 8v8M20 8v8M2 10v4M22 10v4M7 12h10"/></svg>
+      </div>
+      <div>
+        <div class="brand-word">LaEntrenación</div>
+      </div>
+    </div>
+    <button class="profile-pill" id="profileBtn" aria-label="Perfil y ajustes">?</button>
+  </header>
+
+  <main>
+
+    <!-- REGISTRAR -->
+    <section class="view active" id="view-log">
+      <div class="stats-strip">
+        <div class="stat-card">
+          <div class="stat-num num" id="statWeekSessions">0</div>
+          <div class="stat-label">Sesiones esta semana</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num" id="statTotalSessions">0</div>
+          <div class="stat-label">Sesiones totales</div>
+        </div>
+      </div>
+
+      <div id="logEmptyState" class="empty-cta" style="display:none;">
+        <div class="num">Todavía no tienes máquinas</div>
+        <p>Agrega las máquinas de tu gimnasio para empezar a registrar tus series y pesos.</p>
+        <button class="btn btn-primary" id="goAddMachineBtn">Agregar mi primera máquina</button>
+      </div>
+
+      <form id="logForm" class="card" style="display:none;">
+        <div class="field">
+          <label for="logMachine">Máquina</label>
+          <select id="logMachine" required></select>
+        </div>
+        <div class="field">
+          <label for="logDate">Fecha</label>
+          <input type="date" id="logDate" required>
+        </div>
+        <div class="field">
+          <label>Series</label>
+          <div id="setsContainer"></div>
+          <button type="button" class="add-set-btn" id="addSetBtn">+ Agregar serie</button>
+        </div>
+        <div class="field">
+          <label for="logNote">Nota (opcional)</label>
+          <textarea id="logNote" placeholder="Sensación, ajuste del asiento, etc."></textarea>
+        </div>
+        <div class="field">
+          <label>Foto (opcional)</label>
+          <div class="photo-input-row">
+            <img id="logPhotoPreview" class="photo-preview" style="display:none;">
+            <button type="button" class="btn btn-ghost btn-sm file-btn">Elegir foto
+              <input type="file" accept="image/*" id="logPhotoInput">
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Guardar sesión</button>
+      </form>
+    </section>
+
+    <!-- HISTORIAL -->
+    <section class="view" id="view-history">
+      <div class="chip-row" id="historyFilterChips"></div>
+      <div id="historyList"></div>
+      <div id="historyEmpty" class="empty-cta" style="display:none;">
+        <div class="num">Aún no hay sesiones registradas</div>
+        <p>Cuando registres tu primer entrenamiento, aparecerá aquí tu historial completo.</p>
+      </div>
+    </section>
+
+    <!-- PROGRESO -->
+    <section class="view" id="view-progress">
+      <div class="progress-header">
+        <div class="field">
+          <label for="progressMachine">Máquina</label>
+          <select id="progressMachine"></select>
+        </div>
+      </div>
+      <div id="progressEmpty" class="empty-cta" style="display:none;">
+        <div class="num">Sin datos todavía</div>
+        <p>Registra al menos dos sesiones de esta máquina para ver tu progreso.</p>
+      </div>
+      <div id="progressContent" style="display:none;">
+        <div class="metric-toggle">
+          <button class="active" data-metric="max">Peso máximo</button>
+          <button data-metric="volume">Volumen total</button>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="progressChart" height="200"></canvas>
+        </div>
+        <div class="pr-row">
+          <div class="stat-card">
+            <div class="stat-num num" id="prMax">–</div>
+            <div class="stat-label">Récord de peso</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num num" id="prSessions">–</div>
+            <div class="stat-label">Sesiones registradas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAQUINAS -->
+    <section class="view" id="view-machines">
+      <button class="btn btn-primary btn-block" id="openAddMachineBtn" style="margin-bottom:18px;">+ Agregar máquina</button>
+      <div class="card" id="machinesListWrap" style="display:none;">
+        <div id="machinesList"></div>
+      </div>
+      <div id="machinesEmpty" class="empty-cta">
+        <div class="num">Configura tu gimnasio</div>
+        <p>Agrega las máquinas que usas para poder registrar tu progreso en cada una.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="tabbar">
+    <button class="tab-btn active" data-view="view-log">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M4 8v8M20 8v8M2 10v4M22 10v4M7 12h10"/></svg>
+      Registrar
+    </button>
+    <button class="tab-btn" data-view="view-history">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      Historial
+    </button>
+    <button class="tab-btn" data-view="view-progress">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V10M12 19V5M20 19v-7"/></svg>
+      Progreso
+    </button>
+    <button class="tab-btn" data-view="view-machines">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      Máquinas
+    </button>
+  </nav>
+</div>
+
+<!-- Onboarding -->
+<div class="overlay center" id="onboardingOverlay">
+  <div class="sheet">
+    <h2>Antes de empezar</h2>
+    <div class="field">
+      <label for="onboardName">¿Cómo te llamas?</label>
+      <input type="text" id="onboardName" placeholder="Tu nombre" maxlength="30">
+    </div>
+    <p style="font-size:12.5px; color:var(--text-dim); margin:-6px 0 16px; line-height:1.5;">
+      Tus datos se guardan solo en este celular. Si Sebastián abre la misma app en el suyo, su registro será independiente del tuyo.
+    </p>
+    <button class="btn btn-primary btn-block" id="onboardStartBtn">Empezar</button>
+  </div>
+</div>
+
+<!-- Add/edit machine sheet -->
+<div class="overlay" id="machineOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <h2 id="machineSheetTitle">Nueva máquina</h2>
+    <div class="field">
+      <label for="machineName">Nombre</label>
+      <input type="text" id="machineName" placeholder="Ej: Prensa de piernas" maxlength="40">
+    </div>
+    <div class="field">
+      <label for="machineGroup">Grupo muscular (opcional)</label>
+      <select id="machineGroup">
+        <option value="">Sin especificar</option>
+        <option>Piernas</option>
+        <option>Espalda</option>
+        <option>Pecho</option>
+        <option>Hombros</option>
+        <option>Brazos</option>
+        <option>Core</option>
+        <option>Cardio</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Foto (opcional)</label>
+      <div class="photo-input-row">
+        <img id="machinePhotoPreview" class="photo-preview" style="display:none;">
+        <button type="button" class="btn btn-ghost btn-sm file-btn">Elegir foto
+          <input type="file" accept="image/*" id="machinePhotoInput">
+        </button>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block" id="saveMachineBtn">Guardar máquina</button>
+    <button class="btn btn-danger-text btn-block" id="deleteMachineBtn" style="display:none; margin-top:8px;">Eliminar máquina</button>
+  </div>
+</div>
+
+<!-- Session edit sheet -->
+<div class="overlay" id="sessionOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <h2>Editar sesión</h2>
+    <div class="field">
+      <label for="editDate">Fecha</label>
+      <input type="date" id="editDate">
+    </div>
+    <div class="field">
+      <label>Series</label>
+      <div id="editSetsContainer"></div>
+      <button type="button" class="add-set-btn" id="editAddSetBtn">+ Agregar serie</button>
+    </div>
+    <div class="field">
+      <label for="editNote">Nota</label>
+      <textarea id="editNote"></textarea>
+    </div>
+    <button class="btn btn-primary btn-block" id="saveSessionEditBtn">Guardar cambios</button>
+    <button class="btn btn-danger-text btn-block" id="deleteSessionBtn" style="margin-top:6px;">Eliminar sesión</button>
+  </div>
+</div>
+
+<!-- Settings sheet -->
+<div class="overlay" id="settingsOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <h2>Ajustes</h2>
+    <div class="field">
+      <label for="settingsName">Tu nombre</label>
+      <input type="text" id="settingsName" maxlength="30">
+    </div>
+    <div class="sheet-row">
+      <span class="sheet-row-label">Exportar copia de mis datos</span>
+      <button class="btn btn-ghost btn-sm" id="exportBtn">Exportar</button>
+    </div>
+    <div class="sheet-row">
+      <span class="sheet-row-label">Importar copia (reemplaza lo actual)</span>
+      <button class="btn btn-ghost btn-sm file-btn">Importar
+        <input type="file" accept="application/json" id="importInput">
+      </button>
+    </div>
+    <div class="sheet-row">
+      <span class="sheet-row-label">Borrar todos mis datos</span>
+      <button class="btn btn-danger-text" id="resetAllBtn">Borrar</button>
+    </div>
+    <button class="btn btn-ghost btn-block" id="closeSettingsBtn" style="margin-top:14px;">Cerrar</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var STORAGE_KEY = "gymTrackerData_v1";
+  var data = { profileName:"", machines:[], sessions:[], seeded:false };
+
+  var DEFAULT_MACHINES = [
+    { name:"Prensa de piernas", group:"Piernas" },
+    { name:"Extensión de cuádriceps", group:"Piernas" },
+    { name:"Curl de femoral", group:"Piernas" },
+    { name:"Aductor", group:"Piernas" },
+    { name:"Abductor", group:"Piernas" },
+    { name:"Sentadilla Smith", group:"Piernas" },
+    { name:"Jalón al pecho", group:"Espalda" },
+    { name:"Remo sentado en polea", group:"Espalda" },
+    { name:"Hiperextensión", group:"Espalda" },
+    { name:"Press de banca", group:"Pecho" },
+    { name:"Press inclinado con mancuernas", group:"Pecho" },
+    { name:"Pec deck (contractor)", group:"Pecho" },
+    { name:"Press militar", group:"Hombros" },
+    { name:"Elevaciones laterales en máquina", group:"Hombros" },
+    { name:"Curl de bíceps en máquina", group:"Brazos" },
+    { name:"Extensión de tríceps en polea", group:"Brazos" },
+    { name:"Banco Scott", group:"Brazos" },
+    { name:"Máquina de abdominales", group:"Core" },
+    { name:"Rueda abdominal", group:"Core" },
+    { name:"Caminadora", group:"Cardio" },
+    { name:"Bicicleta estática", group:"Cardio" },
+    { name:"Elíptica", group:"Cardio" }
+  ];
+
+  var GROUP_ICONS = {
+    "Piernas": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5c0 2.2.6 3.4 2.2 4.6 1.7 1.3 2.3 2.6 2.3 5 0 2.6-.8 4-.8 6.4"/><path d="M9 3.5C7.3 4.6 6.4 6 6.2 8"/><circle cx="9" cy="3.2" r="1.1" fill="currentColor" stroke="none"/></svg>',
+    "Espalda": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 6l4 6M20 6l-4 6"/><path d="M8 12v4M16 12v4"/><path d="M12 6v14"/></svg>',
+    "Pecho": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h20"/><path d="M5 6v6M19 6v6"/><rect x="7" y="15" width="10" height="3" rx="1"/></svg>',
+    "Hombros": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9 6 4M12 9l6-5"/><path d="M4 4h4M16 4h4"/></svg>',
+    "Brazos": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15c-3-3-3-7 0-10"/><circle cx="5" cy="3.5" r="2"/><circle cx="8.5" cy="16.5" r="2"/></svg>',
+    "Core": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="4" height="4" rx="1"/><rect x="13" y="3" width="4" height="4" rx="1"/><rect x="7" y="9" width="4" height="4" rx="1"/><rect x="13" y="9" width="4" height="4" rx="1"/><rect x="7" y="15" width="4" height="4" rx="1"/><rect x="13" y="15" width="4" height="4" rx="1"/></svg>',
+    "Cardio": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-6 4 12 2-9 2 3h6"/></svg>'
+  };
+
+  function loadData(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if(raw){
+        var parsed = JSON.parse(raw);
+        if(parsed && typeof parsed === "object"){
+          data.profileName = parsed.profileName || "";
+          data.machines = Array.isArray(parsed.machines) ? parsed.machines : [];
+          data.sessions = Array.isArray(parsed.sessions) ? parsed.sessions : [];
+          data.seeded = !!parsed.seeded;
+        }
+      }
+    }catch(e){ console.error("No se pudo leer el almacenamiento local", e); }
+  }
+
+  function seedDefaultsIfNeeded(){
+    if(data.seeded) return;
+    DEFAULT_MACHINES.forEach(function(dm){
+      data.machines.push({ id: uid(), name: dm.name, group: dm.group, photo: null });
+    });
+    data.seeded = true;
+    saveData();
+  }
+
+  function saveData(){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      return true;
+    }catch(e){
+      console.error("No se pudo guardar", e);
+      showToast("No se pudo guardar. Almacenamiento lleno o no disponible.");
+      return false;
+    }
+  }
+
+  function uid(){
+    if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "id-" + Date.now() + "-" + Math.random().toString(36).slice(2,9);
+  }
+
+  function todayISO(){
+    var d = new Date();
+    var m = String(d.getMonth()+1).padStart(2,"0");
+    var day = String(d.getDate()).padStart(2,"0");
+    return d.getFullYear() + "-" + m + "-" + day;
+  }
+
+  function fmtDateLabel(iso){
+    var d = new Date(iso + "T00:00:00");
+    var opts = { weekday:"long", day:"numeric", month:"long" };
+    var s = d.toLocaleDateString("es-ES", opts);
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  function fmtShort(iso){
+    var d = new Date(iso + "T00:00:00");
+    return d.toLocaleDateString("es-ES", { day:"numeric", month:"short" });
+  }
+
+  var toastTimer = null;
+  function showToast(msg, isPR){
+    var t = document.getElementById("toast");
+    t.innerHTML = (isPR ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M17 5h2a2 2 0 0 1 0 4h-1M7 5H5a2 2 0 0 0 0 4h1"/></svg>' : "") + "<span>"+msg+"</span>";
+    t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ t.classList.remove("show"); }, 2800);
+  }
+
+  function compressImage(file, maxWidth, quality){
+    return new Promise(function(resolve, reject){
+      if(!file){ resolve(null); return; }
+      var reader = new FileReader();
+      reader.onload = function(e){
+        var img = new Image();
+        img.onload = function(){
+          var scale = Math.min(1, maxWidth / img.width);
+          var w = Math.max(1, Math.round(img.width * scale));
+          var h = Math.max(1, Math.round(img.height * scale));
+          var canvas = document.createElement("canvas");
+          canvas.width = w; canvas.height = h;
+          var ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, w, h);
+          try{ resolve(canvas.toDataURL("image/jpeg", quality)); }
+          catch(err){ reject(err); }
+        };
+        img.onerror = reject;
+        img.src = e.target.result;
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // ---------- Navigation ----------
+  var views = document.querySelectorAll(".view");
+  var tabBtns = document.querySelectorAll(".tab-btn");
+  tabBtns.forEach(function(btn){
+    btn.addEventListener("click", function(){ switchView(btn.dataset.view); });
+  });
+  function switchView(id){
+    views.forEach(function(v){ v.classList.toggle("active", v.id === id); });
+    tabBtns.forEach(function(b){ b.classList.toggle("active", b.dataset.view === id); });
+    if(id === "view-progress") renderProgress();
+    if(id === "view-history") renderHistory();
+  }
+
+  function openOverlay(id){ document.getElementById(id).classList.add("show"); }
+  function closeOverlay(id){ document.getElementById(id).classList.remove("show"); }
+  document.querySelectorAll(".overlay").forEach(function(ov){
+    ov.addEventListener("click", function(e){ if(e.target === ov) ov.classList.remove("show"); });
+  });
+
+  // ---------- Onboarding ----------
+  function checkOnboarding(){
+    if(!data.profileName){
+      openOverlay("onboardingOverlay");
+    } else {
+      updateProfilePill();
+    }
+  }
+  document.getElementById("onboardStartBtn").addEventListener("click", function(){
+    var name = document.getElementById("onboardName").value.trim();
+    if(!name){ document.getElementById("onboardName").focus(); return; }
+    data.profileName = name;
+    saveData();
+    closeOverlay("onboardingOverlay");
+    updateProfilePill();
+    showToast("Hola, " + name + ". ¡A entrenar!");
+  });
+  function updateProfilePill(){
+    var initial = data.profileName ? data.profileName.trim().charAt(0).toUpperCase() : "?";
+    document.getElementById("profileBtn").textContent = initial;
+  }
+
+  // ---------- Settings ----------
+  document.getElementById("profileBtn").addEventListener("click", function(){
+    document.getElementById("settingsName").value = data.profileName;
+    openOverlay("settingsOverlay");
+  });
+  document.getElementById("closeSettingsBtn").addEventListener("click", function(){
+    var name = document.getElementById("settingsName").value.trim();
+    if(name) { data.profileName = name; saveData(); updateProfilePill(); }
+    closeOverlay("settingsOverlay");
+  });
+  document.getElementById("exportBtn").addEventListener("click", function(){
+    try{
+      var blob = new Blob([JSON.stringify(data, null, 2)], { type:"application/json" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      var safeName = (data.profileName || "registro").toLowerCase().replace(/[^a-z0-9]+/g,"-");
+      a.href = url;
+      a.download = "laentrenacion-" + safeName + ".json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    }catch(e){ console.error(e); showToast("No se pudo exportar."); }
+  });
+  document.getElementById("importInput").addEventListener("change", function(e){
+    var file = e.target.files[0];
+    if(!file) return;
+    if(!confirm("Importar reemplazará todos tus datos actuales. ¿Continuar?")){ e.target.value=""; return; }
+    var reader = new FileReader();
+    reader.onload = function(ev){
+      try{
+        var parsed = JSON.parse(ev.target.result);
+        data.profileName = parsed.profileName || data.profileName;
+        data.machines = Array.isArray(parsed.machines) ? parsed.machines : [];
+        data.sessions = Array.isArray(parsed.sessions) ? parsed.sessions : [];
+        saveData();
+        renderAll();
+        showToast("Datos importados.");
+      }catch(err){ showToast("El archivo no es válido."); }
+      e.target.value = "";
+    };
+    reader.readAsText(file);
+  });
+  document.getElementById("resetAllBtn").addEventListener("click", function(){
+    if(!confirm("Esto borrará todas tus máquinas y sesiones de este celular. ¿Seguro?")) return;
+    data.machines = []; data.sessions = [];
+    saveData();
+    renderAll();
+    closeOverlay("settingsOverlay");
+    showToast("Datos borrados.");
+  });
+
+  // ---------- Machines ----------
+  var editingMachineId = null;
+  var machinePhotoData = null;
+
+  document.getElementById("openAddMachineBtn").addEventListener("click", function(){ openMachineSheet(null); });
+  document.getElementById("goAddMachineBtn").addEventListener("click", function(){ switchView("view-machines"); openMachineSheet(null); });
+
+  function openMachineSheet(machineId){
+    editingMachineId = machineId;
+    machinePhotoData = null;
+    var titleEl = document.getElementById("machineSheetTitle");
+    var nameEl = document.getElementById("machineName");
+    var groupEl = document.getElementById("machineGroup");
+    var previewEl = document.getElementById("machinePhotoPreview");
+    var delBtn = document.getElementById("deleteMachineBtn");
+    if(machineId){
+      var m = data.machines.find(function(x){ return x.id === machineId; });
+      titleEl.textContent = "Editar máquina";
+      nameEl.value = m.name;
+      groupEl.value = m.group || "";
+      if(m.photo){ previewEl.src = m.photo; previewEl.style.display = "block"; machinePhotoData = m.photo; }
+      else { previewEl.style.display = "none"; }
+      delBtn.style.display = "block";
+    } else {
+      titleEl.textContent = "Nueva máquina";
+      nameEl.value = ""; groupEl.value = "";
+      previewEl.style.display = "none";
+      delBtn.style.display = "none";
+    }
+    document.getElementById("machinePhotoInput").value = "";
+    openOverlay("machineOverlay");
+    setTimeout(function(){ nameEl.focus(); }, 200);
+  }
+
+  document.getElementById("machinePhotoInput").addEventListener("change", function(e){
+    var file = e.target.files[0];
+    if(!file) return;
+    compressImage(file, 300, 0.7).then(function(dataUrl){
+      machinePhotoData = dataUrl;
+      var prev = document.getElementById("machinePhotoPreview");
+      prev.src = dataUrl; prev.style.display = "block";
+    }).catch(function(){ showToast("No se pudo procesar la foto."); });
+  });
+
+  document.getElementById("saveMachineBtn").addEventListener("click", function(){
+    var name = document.getElementById("machineName").value.trim();
+    if(!name){ showToast("Ponle un nombre a la máquina."); return; }
+    var group = document.getElementById("machineGroup").value;
+    if(editingMachineId){
+      var m = data.machines.find(function(x){ return x.id === editingMachineId; });
+      m.name = name; m.group = group; m.photo = machinePhotoData;
+    } else {
+      data.machines.push({ id: uid(), name: name, group: group, photo: machinePhotoData });
+    }
+    saveData();
+    closeOverlay("machineOverlay");
+    renderMachines();
+    populateMachineSelects();
+    showToast("Máquina guardada.");
+  });
+
+  document.getElementById("deleteMachineBtn").addEventListener("click", function(){
+    if(!editingMachineId) return;
+    if(!confirm("¿Eliminar esta máquina? Las sesiones registradas en ella se conservarán en tu historial.")) return;
+    data.machines = data.machines.filter(function(x){ return x.id !== editingMachineId; });
+    saveData();
+    closeOverlay("machineOverlay");
+    renderMachines();
+    populateMachineSelects();
+    showToast("Máquina eliminada.");
+  });
+
+  function renderMachines(){
+    var list = document.getElementById("machinesList");
+    var wrap = document.getElementById("machinesListWrap");
+    var empty = document.getElementById("machinesEmpty");
+    list.innerHTML = "";
+    if(data.machines.length === 0){
+      wrap.style.display = "none"; empty.style.display = "block";
+      return;
+    }
+    wrap.style.display = "block"; empty.style.display = "none";
+    data.machines.forEach(function(m){
+      var row = document.createElement("div");
+      row.className = "machine-row";
+      var thumbContent = m.photo ? '<img src="'+m.photo+'" alt="">' : (GROUP_ICONS[m.group] || m.name.charAt(0).toUpperCase());
+      row.innerHTML =
+        '<div class="machine-thumb">'+thumbContent+'</div>'+
+        '<div class="machine-info"><div class="machine-name"></div><div class="machine-group"></div></div>'+
+        '<button class="btn-icon" aria-label="Editar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></button>';
+      row.querySelector(".machine-name").textContent = m.name;
+      row.querySelector(".machine-group").textContent = m.group || "Sin grupo";
+      row.querySelector("button").addEventListener("click", function(){ openMachineSheet(m.id); });
+      list.appendChild(row);
+    });
+  }
+
+  function populateMachineSelects(){
+    var selects = [document.getElementById("logMachine"), document.getElementById("progressMachine")];
+    selects.forEach(function(sel){
+      var prevVal = sel.value;
+      sel.innerHTML = "";
+      if(data.machines.length === 0){
+        var opt = document.createElement("option");
+        opt.textContent = "Sin máquinas todavía";
+        sel.appendChild(opt);
+        return;
+      }
+      data.machines.forEach(function(m){
+        var opt = document.createElement("option");
+        opt.value = m.id; opt.textContent = m.name;
+        sel.appendChild(opt);
+      });
+      if(data.machines.some(function(m){ return m.id === prevVal; })) sel.value = prevVal;
+    });
+    var logEmpty = document.getElementById("logEmptyState");
+    var logForm = document.getElementById("logForm");
+    if(data.machines.length === 0){
+      logEmpty.style.display = "block"; logForm.style.display = "none";
+    } else {
+      logEmpty.style.display = "none"; logForm.style.display = "block";
+    }
+  }
+
+  // ---------- Log form (sets builder) ----------
+  var setCounter = 0;
+  function addSetRow(container, weight, reps){
+    setCounter++;
+    var row = document.createElement("div");
+    row.className = "set-row";
+    row.dataset.rowId = setCounter;
+    row.innerHTML =
+      '<input type="number" step="0.5" min="0" placeholder="Peso (kg)" class="set-weight" value="'+(weight!=null?weight:"")+'">'+
+      '<input type="number" step="1" min="0" placeholder="Reps" class="set-reps" value="'+(reps!=null?reps:"")+'">'+
+      '<button type="button" class="remove-set" aria-label="Quitar serie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>';
+    row.querySelector(".remove-set").addEventListener("click", function(){
+      if(container.children.length > 1) row.remove();
+    });
+    container.appendChild(row);
+  }
+
+  document.getElementById("addSetBtn").addEventListener("click", function(){
+    addSetRow(document.getElementById("setsContainer"));
+  });
+
+  function resetLogForm(){
+    var container = document.getElementById("setsContainer");
+    container.innerHTML = "";
+    addSetRow(container);
+    document.getElementById("logDate").value = todayISO();
+    document.getElementById("logNote").value = "";
+    document.getElementById("logPhotoInput").value = "";
+    document.getElementById("logPhotoPreview").style.display = "none";
+    logPhotoData = null;
+  }
+
+  var logPhotoData = null;
+  document.getElementById("logPhotoInput").addEventListener("change", function(e){
+    var file = e.target.files[0];
+    if(!file) return;
+    compressImage(file, 480, 0.65).then(function(dataUrl){
+      logPhotoData = dataUrl;
+      var prev = document.getElementById("logPhotoPreview");
+      prev.src = dataUrl; prev.style.display = "block";
+    }).catch(function(){ showToast("No se pudo procesar la foto."); });
+  });
+
+  document.getElementById("logForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var machineId = document.getElementById("logMachine").value;
+    if(!machineId || !data.machines.some(function(m){return m.id===machineId;})){
+      showToast("Selecciona una máquina."); return;
+    }
+    var date = document.getElementById("logDate").value || todayISO();
+    var rows = document.querySelectorAll("#setsContainer .set-row");
+    var sets = [];
+    rows.forEach(function(r){
+      var w = parseFloat(r.querySelector(".set-weight").value);
+      var reps = parseInt(r.querySelector(".set-reps").value, 10);
+      if(!isNaN(w) && !isNaN(reps) && w >= 0 && reps > 0){
+        sets.push({ weight: w, reps: reps });
+      }
+    });
+    if(sets.length === 0){ showToast("Agrega al menos una serie con peso y repeticiones."); return; }
+
+    var prevMax = maxWeightForMachine(machineId);
+    var newMax = Math.max.apply(null, sets.map(function(s){ return s.weight; }));
+
+    data.sessions.push({
+      id: uid(), machineId: machineId, date: date,
+      sets: sets, note: document.getElementById("logNote").value.trim(),
+      photo: logPhotoData
+    });
+    saveData();
+    resetLogForm();
+    renderStats();
+
+    if(prevMax !== null && newMax > prevMax){
+      showToast("Nuevo récord: " + newMax + " kg", true);
+    } else {
+      showToast("Sesión guardada.");
+    }
+  });
+
+  function maxWeightForMachine(machineId){
+    var sessions = data.sessions.filter(function(s){ return s.machineId === machineId; });
+    if(sessions.length === 0) return null;
+    var max = 0;
+    sessions.forEach(function(s){ s.sets.forEach(function(st){ if(st.weight > max) max = st.weight; }); });
+    return max;
+  }
+
+  // ---------- Stats ----------
+  function renderStats(){
+    document.getElementById("statTotalSessions").textContent = data.sessions.length;
+    var now = new Date();
+    var weekAgo = new Date(now.getTime() - 6*24*60*60*1000);
+    var weekAgoISO = weekAgo.toISOString().slice(0,10);
+    var todayIso = todayISO();
+    var uniqueDays = new Set();
+    data.sessions.forEach(function(s){
+      if(s.date >= weekAgoISO && s.date <= todayIso) uniqueDays.add(s.date);
+    });
+    document.getElementById("statWeekSessions").textContent = uniqueDays.size;
+  }
+
+  // ---------- History ----------
+  var historyFilter = "all";
+  function renderHistoryChips(){
+    var wrap = document.getElementById("historyFilterChips");
+    wrap.innerHTML = "";
+    var allChip = document.createElement("button");
+    allChip.className = "chip" + (historyFilter === "all" ? " active" : "");
+    allChip.textContent = "Todas";
+    allChip.addEventListener("click", function(){ historyFilter = "all"; renderHistory(); });
+    wrap.appendChild(allChip);
+    data.machines.forEach(function(m){
+      var chip = document.createElement("button");
+      chip.className = "chip" + (historyFilter === m.id ? " active" : "");
+      chip.textContent = m.name;
+      chip.addEventListener("click", function(){ historyFilter = m.id; renderHistory(); });
+      wrap.appendChild(chip);
+    });
+  }
+
+  var editingSessionId = null;
+
+  function renderHistory(){
+    renderHistoryChips();
+    var listEl = document.getElementById("historyList");
+    var emptyEl = document.getElementById("historyEmpty");
+    listEl.innerHTML = "";
+    var sessions = data.sessions.slice();
+    if(historyFilter !== "all") sessions = sessions.filter(function(s){ return s.machineId === historyFilter; });
+    sessions.sort(function(a,b){ return b.date.localeCompare(a.date) || 0; });
+
+    if(sessions.length === 0){
+      emptyEl.style.display = "block";
+      return;
+    }
+    emptyEl.style.display = "none";
+
+    var grouped = {};
+    var order = [];
+    sessions.forEach(function(s){
+      if(!grouped[s.date]){ grouped[s.date] = []; order.push(s.date); }
+      grouped[s.date].push(s);
+    });
+
+    order.forEach(function(date){
+      var group = document.createElement("div");
+      group.className = "day-group";
+      var label = document.createElement("div");
+      label.className = "day-label";
+      label.textContent = fmtDateLabel(date);
+      group.appendChild(label);
+
+      grouped[date].forEach(function(s){
+        var m = data.machines.find(function(x){ return x.id === s.machineId; });
+        var card = document.createElement("div");
+        card.className = "session-card";
+        var setsText = s.sets.map(function(st){ return st.reps + "×" + st.weight + "kg"; }).join(" · ");
+        var maxW = Math.max.apply(null, s.sets.map(function(st){ return st.weight; }));
+        var priorMax = maxWeightBefore(s.machineId, s.date, s.id);
+        var isPR = priorMax !== null && maxW > priorMax;
+
+        card.innerHTML =
+          '<div class="session-top">'+
+            '<div><div class="session-machine"></div><div class="session-sets"></div></div>'+
+            '<div class="session-actions">'+
+              '<button class="btn-icon edit-session" aria-label="Editar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></button>'+
+            '</div>'+
+          '</div>';
+        card.querySelector(".session-machine").textContent = m ? m.name : "Máquina eliminada";
+        card.querySelector(".session-sets").textContent = setsText;
+        if(s.note){
+          var noteEl = document.createElement("div");
+          noteEl.className = "session-note";
+          noteEl.textContent = s.note;
+          card.appendChild(noteEl);
+        }
+        if(s.photo){
+          var img = document.createElement("img");
+          img.className = "session-photo"; img.src = s.photo;
+          card.appendChild(img);
+        }
+        if(isPR){
+          var prTag = document.createElement("div");
+          prTag.className = "pr-tag";
+          prTag.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/></svg> Récord en ese momento';
+          card.appendChild(prTag);
+        }
+        card.querySelector(".edit-session").addEventListener("click", function(){ openSessionEdit(s.id); });
+        group.appendChild(card);
+      });
+      listEl.appendChild(group);
+    });
+  }
+
+  function maxWeightBefore(machineId, date, excludeId){
+    var relevant = data.sessions.filter(function(s){
+      return s.machineId === machineId && s.id !== excludeId && s.date < date;
+    });
+    if(relevant.length === 0) return null;
+    var max = 0;
+    relevant.forEach(function(s){ s.sets.forEach(function(st){ if(st.weight > max) max = st.weight; }); });
+    return max;
+  }
+
+  function openSessionEdit(sessionId){
+    editingSessionId = sessionId;
+    var s = data.sessions.find(function(x){ return x.id === sessionId; });
+    if(!s) return;
+    document.getElementById("editDate").value = s.date;
+    document.getElementById("editNote").value = s.note || "";
+    var container = document.getElementById("editSetsContainer");
+    container.innerHTML = "";
+    s.sets.forEach(function(st){ addSetRow(container, st.weight, st.reps); });
+    if(s.sets.length === 0) addSetRow(container);
+    openOverlay("sessionOverlay");
+  }
+
+  document.getElementById("editAddSetBtn").addEventListener("click", function(){
+    addSetRow(document.getElementById("editSetsContainer"));
+  });
+
+  document.getElementById("saveSessionEditBtn").addEventListener("click", function(){
+    var s = data.sessions.find(function(x){ return x.id === editingSessionId; });
+    if(!s) return;
+    var date = document.getElementById("editDate").value || s.date;
+    var rows = document.querySelectorAll("#editSetsContainer .set-row");
+    var sets = [];
+    rows.forEach(function(r){
+      var w = parseFloat(r.querySelector(".set-weight").value);
+      var reps = parseInt(r.querySelector(".set-reps").value, 10);
+      if(!isNaN(w) && !isNaN(reps) && w >= 0 && reps > 0) sets.push({ weight:w, reps:reps });
+    });
+    if(sets.length === 0){ showToast("Agrega al menos una serie válida."); return; }
+    s.date = date; s.sets = sets; s.note = document.getElementById("editNote").value.trim();
+    saveData();
+    closeOverlay("sessionOverlay");
+    renderHistory();
+    renderStats();
+    showToast("Sesión actualizada.");
+  });
+
+  document.getElementById("deleteSessionBtn").addEventListener("click", function(){
+    if(!confirm("¿Eliminar esta sesión del historial?")) return;
+    data.sessions = data.sessions.filter(function(x){ return x.id !== editingSessionId; });
+    saveData();
+    closeOverlay("sessionOverlay");
+    renderHistory();
+    renderStats();
+    showToast("Sesión eliminada.");
+  });
+
+  // ---------- Progress ----------
+  var chartInstance = null;
+  var currentMetric = "max";
+  document.querySelectorAll(".metric-toggle button").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll(".metric-toggle button").forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      currentMetric = btn.dataset.metric;
+      renderProgress();
+    });
+  });
+  document.getElementById("progressMachine").addEventListener("change", renderProgress);
+
+  function renderProgress(){
+    var machineId = document.getElementById("progressMachine").value;
+    var content = document.getElementById("progressContent");
+    var empty = document.getElementById("progressEmpty");
+    var sessions = data.sessions.filter(function(s){ return s.machineId === machineId; })
+      .sort(function(a,b){ return a.date.localeCompare(b.date); });
+
+    if(sessions.length < 1){
+      content.style.display = "none"; empty.style.display = "block";
+      if(chartInstance){ chartInstance.destroy(); chartInstance = null; }
+      return;
+    }
+    content.style.display = "block"; empty.style.display = "none";
+
+    var labels = sessions.map(function(s){ return fmtShort(s.date); });
+    var values = sessions.map(function(s){
+      if(currentMetric === "max") return Math.max.apply(null, s.sets.map(function(st){ return st.weight; }));
+      var vol = 0;
+      s.sets.forEach(function(st){ vol += st.weight * st.reps; });
+      return vol;
+    });
+
+    var styles = getComputedStyle(document.documentElement);
+    var accent = styles.getPropertyValue("--accent").trim();
+    var textDim = styles.getPropertyValue("--text-dim").trim();
+    var border = styles.getPropertyValue("--border").trim();
+    var textColor = styles.getPropertyValue("--text").trim();
+
+    var ctx = document.getElementById("progressChart").getContext("2d");
+    if(chartInstance) chartInstance.destroy();
+    chartInstance = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: labels,
+        datasets: [{
+          data: values,
+          borderColor: accent,
+          backgroundColor: accent,
+          pointBackgroundColor: accent,
+          pointRadius: 3.5,
+          tension: 0.25,
+          fill: false,
+          borderWidth: 2.5
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display:false }, tooltip: {
+          callbacks: { label: function(ctx){
+            return currentMetric === "max" ? (ctx.parsed.y + " kg") : (ctx.parsed.y + " kg totales");
+          }}
+        }},
+        scales: {
+          x: { ticks:{ color:textDim, font:{ size:11 } }, grid:{ color: border } },
+          y: { ticks:{ color:textDim, font:{ size:11 } }, grid:{ color: border }, beginAtZero:true }
+        }
+      }
+    });
+
+    var maxW = 0;
+    sessions.forEach(function(s){ s.sets.forEach(function(st){ if(st.weight > maxW) maxW = st.weight; }); });
+    document.getElementById("prMax").textContent = maxW + " kg";
+    document.getElementById("prSessions").textContent = sessions.length;
+  }
+
+  // ---------- Render all ----------
+  function renderAll(){
+    populateMachineSelects();
+    renderMachines();
+    renderStats();
+    renderHistory();
+    renderProgress();
+  }
+
+  loadData();
+  seedDefaultsIfNeeded();
+  checkOnboarding();
+  resetLogForm();
+  renderAll();
+
+})();
+</script>
+</body>
+</html>
